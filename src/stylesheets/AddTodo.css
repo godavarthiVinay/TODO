@@ -1,0 +1,70 @@
+/*AddTodo  starts*/
+
+.addTodoContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+
+}
+
+.addTodoContainer .ui.input {
+    font-size: 20px;
+    height: 60px;
+    width: 331px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.10);
+    border-radius: 6px
+}
+
+.addTodoContainer .ui.button {
+    margin: 0;
+    margin-left: 20px;
+    width: 130px !important;
+    height: 54px;
+    font-size: 16px;
+    border-radius: 7px
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .addTodoContainer {
+        padding: 0;
+    }
+
+    .addTodoContainer .ui.input {
+        font-size: 10px;
+        height: 30px;
+        width: 152px;
+
+    }
+
+    .addTodoContainer .ui.button {
+        margin-left: 10px;
+        width: 73px !important;
+        height: 24px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .addTodoContainer {
+        padding: 0;
+    }
+
+    .addTodoContainer .ui.input {
+        font-size: 15px;
+        height: 40px;
+        width: 250px;
+
+    }
+
+    .addTodoContainer .ui.button {
+        margin-left: 15px;
+        width: 80px !important;
+        height: 35px;
+        font-size: 12px;
+    }
+}

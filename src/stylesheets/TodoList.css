@@ -1,0 +1,115 @@
+.todoMainContainer {
+    margin-top: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+
+.listItem {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+}
+input[type="checkbox" i] {
+    zoom: 2;
+}
+
+.divItem{
+    font-size: 20px;
+    height: 60px;
+    width: 400px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;padding-left: 10px;
+}
+
+.listItem .ui.input {
+    font-size: 20px;
+    height: 60px;
+    width: 400px;
+}
+
+.relative-set {
+    width: 30px;
+    position: relative;
+    align-items: center;
+}
+
+.close-icon {
+    position: absolute;
+    transition: .5s ease;
+    top: -9px;
+    display: none;
+}
+
+.listItem:hover .close-icon {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .listItem{
+        padding: 5px;
+
+    }
+    input[type="checkbox" i] {
+        zoom: 0;
+    }
+    .divItem{
+        font-size: 12px;
+        height: 30px;
+        width: 200px;
+        padding-left: 5px;
+    }
+    .listItem .ui.input {
+        font-size: 12px;
+        height: 30px;
+        width: 200px;
+    }
+
+    .relative-set {
+        width: 15px;
+    }
+
+    .close-icon {
+        top: -9px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .listItem{
+        padding: 7px;
+
+    }
+    input[type="checkbox" i] {
+        zoom: 1;
+    }
+    .divItem{
+        font-size: 15px;
+        height: 40px;
+        width: 300px;
+        padding-left: 7px;
+    }
+    .listItem .ui.input {
+        font-size: 15px;
+        height: 40px;
+        width: 300px;
+    }
+
+    .relative-set {
+        width: 22px;
+    }
+
+    .close-icon {
+        top: -9px;
+    }
+
+}
+
